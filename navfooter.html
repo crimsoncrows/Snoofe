@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Fredoka:wght@500;600;700&family=Baloo+2:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Snoofé</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">Snoofé</div>
+      <nav id="primary-nav">
+        <a href="#home">Home</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#books">Books</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-right">
+        <div class="avatar">
+          <img src="navbar_pics/navsnoopy.png" alt="Profile avatar" />
+        </div>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="sample">This is a NavBar and Footer layout. Content goes here.</div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Snoofé</div>
+          <p class="footer-tagline">
+            Cozy moments, aromatic coffee, and a community of readers.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <a href="#home">Home</a>
+          <a href="#coffee">Coffee</a>
+          <a href="#books">Books</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-social">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Pinterest"
+              ><i class="fa-brands fa-pinterest-p"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Snoofé. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger')
+      const nav = document.getElementById('primary-nav')
+
+      hamburger.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open')
+        hamburger.classList.toggle('open')
+        hamburger.setAttribute('aria-expanded', isOpen)
+      })
+
+      nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open')
+          hamburger.classList.remove('open')
+          hamburger.setAttribute('aria-expanded', false)
+        })
+      })
+    </script>
+  </body>
+</html>
