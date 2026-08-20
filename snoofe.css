@@ -3,6 +3,8 @@
     --dark-brown: #3a2b1a;
     --btn-brown: #5c4326;
     --pink-outline: #e8b4bb;
+    --soft-pink: #f4dadd;
+    --light-card: #fffaf0;
     --text-body: #4a3b28;
   }
 
@@ -188,7 +190,7 @@
   }
 
   .product-card {
-    background: #fffaf0;
+    background: var(--light-card);
     border: 1px solid #e8dcc2;
     border-radius: 14px;
     padding: 20px;
@@ -260,5 +262,181 @@
   @media (max-width: 480px) {
     .product-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  /* ==================== Contact Us Page ==================== */
+  .contact-page {
+    min-height: calc(100vh - 78px);
+  }
+
+  .contact-intro {
+    max-width: 680px;
+  }
+
+  .contact-intro h1,
+  .form-heading,
+  .form-label,
+  .touch-title,
+  .contact-detail h3 {
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .contact-intro h1 {
+    color: var(--dark-brown);
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .contact-us-highlight {
+    color: var(--cream);
+    -webkit-text-stroke: 2px var(--pink-outline);
+    text-shadow:
+      -2px -2px 0 var(--pink-outline),
+       2px -2px 0 var(--pink-outline),
+      -2px  2px 0 var(--pink-outline),
+       2px  2px 0 var(--pink-outline);
+  }
+
+  .contact-intro > p:last-child {
+    font-size: 16px;
+  }
+
+  .contact-form-card,
+  .contact-info-card {
+    border-radius: 18px;
+  }
+
+  .contact-form-card {
+    border: 2px solid rgba(232, 180, 187, 0.65);
+    background: var(--light-card);
+    box-shadow: 0 12px 28px rgba(58, 43, 26, 0.07);
+  }
+
+  .form-heading {
+    color: var(--dark-brown);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .form-label {
+    margin-bottom: 4px;
+    color: var(--dark-brown);
+    font-weight: 500;
+  }
+
+  .contact-page .form-control {
+    border: 1.5px solid #d8c8b1;
+    border-radius: 9px;
+    font-family: 'Baloo 2', sans-serif;
+  }
+
+  .contact-page .form-control:focus {
+    border-color: var(--pink-outline);
+    box-shadow: 0 0 0 3px rgba(232, 180, 187, 0.24);
+  }
+
+  .contact-page textarea.form-control {
+    min-height: 105px;
+    resize: vertical;
+  }
+
+  .send-button {
+    padding: 10px 24px;
+    color: var(--cream);
+    background: var(--btn-brown);
+  }
+
+  .send-button:hover,
+  .send-button:focus-visible {
+    color: var(--cream);
+    background: #4b351e;
+  }
+
+  .contact-info-card {
+    justify-content: center;
+    color: var(--cream);
+    background: var(--dark-brown);
+  }
+
+  .contact-image {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .touch-title {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--pink-outline);
+    color: var(--pink-outline);
+    font-size: 21px;
+    letter-spacing: 1.5px;
+  }
+
+  .contact-details {
+    width: 100%;
+    max-width: 410px;
+  }
+
+  .contact-detail {
+    border-color: rgba(245, 234, 210, 0.28) !important;
+  }
+
+  .small-icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--dark-brown);
+    background: var(--soft-pink);
+  }
+
+  .small-icon i {
+    font-size: 21px;
+  }
+
+  .contact-detail h3 {
+    margin-bottom: 2px;
+    color: var(--cream);
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .contact-detail p {
+    margin: 0;
+  }
+
+  .contact-detail a {
+    color: var(--cream);
+    text-decoration: none;
+  }
+
+  .contact-detail a:hover {
+    color: var(--pink-outline);
+  }
+
+  @media (max-width: 650px) {
+    .contact-image {
+      width: 165px;
+      height: 165px;
+    }
+
+    .contact-intro h1 {
+      font-size: 42px;
+    }
+
+    .send-button {
+      width: 100%;
     }
   }

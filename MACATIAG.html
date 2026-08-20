@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Snoofé</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Baloo+2:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="snoofe.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Snoofé</div>
+
+        <nav aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="avatar">
+            <img src="image/snoopy_avatar.png" alt="Snoopy profile avatar">
+        </div>
+    </header>
+
+    <main class="contact-page py-4">
+        <section class="container">
+            <div class="contact-intro text-center mx-auto mb-4">
+                <h1 class="mb-2">Contact <span class="contact-us-highlight">Us</span></h1>
+                <p class="mb-0">
+                    Have a question about Snoofé? Send us a message and we'd be happy to hear from you.
+                </p>
+            </div>
+
+            <div class="row g-3 align-items-stretch">
+                <div class="col-lg-7">
+                    <div class="contact-form-card h-100 p-4">
+                        <h2 class="form-heading mb-3">SEND A NOTE</h2>
+
+                        <form class="row g-3" action="#" method="post">
+                            <div class="col-12">
+                                <label class="form-label" for="full-name">Full Name</label>
+                                <input class="form-control" type="text" id="full-name" name="full-name" placeholder="Enter your full name" autocomplete="name" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn send-button" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <aside class="contact-info-card h-100 p-4 d-flex flex-column text-center" aria-labelledby="touch-heading">
+                        <img
+                            class="contact-image"
+                            src="image/snoopy-contact.png"
+                            alt="Snoopy and Woodstock writing beside books and coffee"
+                        >
+
+                        <h2 id="touch-heading" class="touch-title mb-2">GET IN TOUCH</h2>
+
+                        <div class="contact-details text-start mx-auto">
+                            <div class="contact-detail d-flex align-items-center gap-3 py-3 border-bottom">
+                                <span class="small-icon" aria-hidden="true"><i class="bi bi-envelope-fill"></i></span>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:snoofe@gmail.com">snoofe@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail d-flex align-items-center gap-3 py-3">
+                                <span class="small-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></span>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p><a href="tel:+639177017395">+63 917 701 7395</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
