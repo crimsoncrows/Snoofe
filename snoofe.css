@@ -1,0 +1,400 @@
+:root {
+    --cream: #f5ead2;
+    --dark-brown: #3a2b1a;
+    --btn-brown: #5c4326;
+    --pink-outline: #e8b4bb;
+    --text-body: #4a3b28;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    font-family: 'Baloo 2', sans-serif;
+    color: var(--text-body);
+  }
+
+  /* Header */
+  header {
+    background: var(--dark-brown);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+  }
+
+  .logo {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--cream);
+    letter-spacing: 1px;
+  }
+
+  nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+  }
+
+  nav a:hover,
+  nav a:focus-visible {
+    opacity: 0.75;
+  }
+
+  nav a.active {
+    color: var(--pink-outline);
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #dad6d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 90px 48px 60px;
+    gap: 40px;
+  }
+
+  .hero-copy {
+    max-width: 480px;
+  }
+
+  .hero-title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .hero-title .line1 {
+    color: var(--cream);
+    -webkit-text-stroke: 2px #ffffff;
+    text-shadow:
+      -2px -2px 0 #fff,
+       2px -2px 0 #fff,
+      -2px  2px 0 #fff,
+       2px  2px 0 #fff;
+  }
+
+  .hero-title .line2 {
+    color: var(--cream);
+    -webkit-text-stroke: 2px var(--pink-outline);
+    text-shadow:
+      -2px -2px 0 var(--pink-outline),
+       2px -2px 0 var(--pink-outline),
+      -2px  2px 0 var(--pink-outline),
+       2px  2px 0 var(--pink-outline);
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-body);
+    margin-bottom: 36px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+  }
+
+  .btn {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+  }
+
+  .btn:hover { transform: translateY(-2px); }
+
+  .btn-filled {
+    background: var(--btn-brown);
+    color: var(--cream);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--btn-brown);
+    border-color: var(--btn-brown);
+  }
+
+  .hero-illustration {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Shop Page */
+  .shop-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 48px 20px;
+    text-align: center;
+  }
+
+  .shop-title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: var(--dark-brown);
+    margin-bottom: 10px;
+  }
+
+  .shop-subtitle {
+    font-size: 16px;
+    color: var(--text-body);
+    opacity: 0.8;
+  }
+
+  .shop-products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 48px 100px;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Book Corner */
+  .book-corner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 48px 100px;
+    text-align: center;
+  }
+
+  .book-corner-title {
+    display: inline-block;
+    font-family: 'Fredoka', serif;
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--dark-brown);
+    background: #fffaf0;
+    border-radius: 40px;
+    padding: 14px 48px;
+    margin-bottom: 20px;
+  }
+
+  .book-corner-desc {
+    max-width: 640px;
+    margin: 0 auto 44px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-body);
+    opacity: 0.85;
+  }
+
+  .book-shelf {
+    background: var(--dark-brown);
+    border-radius: 60px;
+    padding: 40px 60px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+  }
+
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+
+  .book-item:hover {
+    transform: translateY(-8px);
+  }
+
+  .book-cover {
+    width: 130px;
+    height: 190px;
+    border-radius: 3px 8px 8px 3px;
+    overflow: hidden;
+    position: relative;
+    background: var(--cream);
+    box-shadow:
+      3px 3px 0 0 #efe2c2,
+      6px 6px 0 0 #e2d2a4,
+      3px 3px 10px 3px rgba(0, 0, 0, 0.35),
+      6px 8px 16px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .book-item:hover .book-cover {
+    box-shadow:
+      4px 4px 0 0 #efe2c2,
+      8px 8px 0 0 #e2d2a4,
+      4px 6px 14px 3px rgba(0, 0, 0, 0.4),
+      8px 12px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 3px 8px 8px 3px;
+  }
+
+  .book-author {
+    margin-top: 22px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cream);
+  }
+
+  /* Featured Products */
+  .featured {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 48px 100px;
+    text-align: center;
+  }
+
+  .featured-title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--dark-brown);
+    margin-bottom: 8px;
+  }
+
+  .featured-subtitle {
+    font-size: 15px;
+    color: var(--text-body);
+    opacity: 0.8;
+    margin-bottom: 44px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .product-card {
+    background: #fffaf0;
+    border: 1px solid #e8dcc2;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(58, 43, 26, 0.12);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 150px;
+    background: var(--cream);
+    border: 2px dashed #c9b896;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a8946b;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .product-name {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark-brown);
+    margin-bottom: 6px;
+  }
+
+  .product-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--btn-brown);
+    margin-bottom: 16px;
+  }
+
+  .btn-small {
+    padding: 8px 24px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  @media (max-width: 860px) {
+    header { padding: 16px 24px; }
+    nav { gap: 20px; }
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 24px;
+    }
+    .hero-copy { max-width: 100%; }
+    .hero-title { font-size: 40px; }
+    .hero-buttons { justify-content: center; }
+
+    .featured { padding: 20px 24px 60px; }
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-hero { padding: 40px 24px 10px; }
+    .shop-title { font-size: 32px; }
+    .shop-products { padding: 20px 24px 60px; }
+
+    .book-corner { padding: 20px 24px 60px; }
+    .book-shelf { flex-wrap: wrap; gap: 24px; padding: 32px 24px 24px; }
+  }
+
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .book-cover { width: 100px; height: 150px; }
+  }
