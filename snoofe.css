@@ -3,8 +3,11 @@
     --dark-brown: #3a2b1a;
     --btn-brown: #5c4326;
     --pink-outline: #e8b4bb;
+<<<<<<< HEAD
     --soft-pink: #f4dadd;
     --light-card: #fffaf0;
+=======
+>>>>>>> MANIO
     --text-body: #4a3b28;
   }
 
@@ -51,6 +54,13 @@
     opacity: 0.75;
   }
 
+<<<<<<< HEAD
+=======
+  nav a.active {
+    color: var(--pink-outline);
+  }
+
+>>>>>>> MANIO
   .avatar {
     width: 42px;
     height: 42px;
@@ -160,6 +170,132 @@
     padding: 20px;
   }
 
+<<<<<<< HEAD
+=======
+  /* Shop Page */
+  .shop-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 48px 20px;
+    text-align: center;
+  }
+
+  .shop-title {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    color: var(--dark-brown);
+    margin-bottom: 10px;
+  }
+
+  .shop-subtitle {
+    font-size: 16px;
+    color: var(--text-body);
+    opacity: 0.8;
+  }
+
+  .shop-products {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 48px 100px;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Book Corner */
+  .book-corner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 48px 100px;
+    text-align: center;
+  }
+
+  .book-corner-title {
+    display: inline-block;
+    font-family: 'Fredoka', serif;
+    font-weight: 500;
+    font-size: 34px;
+    color: var(--dark-brown);
+    background: #fffaf0;
+    border-radius: 40px;
+    padding: 14px 48px;
+    margin-bottom: 20px;
+  }
+
+  .book-corner-desc {
+    max-width: 640px;
+    margin: 0 auto 44px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-body);
+    opacity: 0.85;
+  }
+
+  .book-shelf {
+    background: var(--dark-brown);
+    border-radius: 60px;
+    padding: 40px 60px 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+  }
+
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+
+  .book-item:hover {
+    transform: translateY(-8px);
+  }
+
+  .book-cover {
+    width: 130px;
+    height: 190px;
+    border-radius: 3px 8px 8px 3px;
+    overflow: hidden;
+    position: relative;
+    background: var(--cream);
+    box-shadow:
+      3px 3px 0 0 #efe2c2,
+      6px 6px 0 0 #e2d2a4,
+      3px 3px 10px 3px rgba(0, 0, 0, 0.35),
+      6px 8px 16px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.2s ease;
+  }
+
+  .book-item:hover .book-cover {
+    box-shadow:
+      4px 4px 0 0 #efe2c2,
+      8px 8px 0 0 #e2d2a4,
+      4px 6px 14px 3px rgba(0, 0, 0, 0.4),
+      8px 12px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 3px 8px 8px 3px;
+  }
+
+  .book-author {
+    margin-top: 22px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cream);
+  }
+
+>>>>>>> MANIO
   /* Featured Products */
   .featured {
     max-width: 1200px;
@@ -190,7 +326,11 @@
   }
 
   .product-card {
+<<<<<<< HEAD
     background: var(--light-card);
+=======
+    background: #fffaf0;
+>>>>>>> MANIO
     border: 1px solid #e8dcc2;
     border-radius: 14px;
     padding: 20px;
@@ -257,12 +397,23 @@
     .product-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+<<<<<<< HEAD
+=======
+
+    .shop-hero { padding: 40px 24px 10px; }
+    .shop-title { font-size: 32px; }
+    .shop-products { padding: 20px 24px 60px; }
+
+    .book-corner { padding: 20px 24px 60px; }
+    .book-shelf { flex-wrap: wrap; gap: 24px; padding: 32px 24px 24px; }
+>>>>>>> MANIO
   }
 
   @media (max-width: 480px) {
     .product-grid {
       grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
   }
 
   /* ==================== Contact Us Page ==================== */
@@ -439,4 +590,8 @@
     .send-button {
       width: 100%;
     }
+=======
+
+    .book-cover { width: 100px; height: 150px; }
+>>>>>>> MANIO
   }
